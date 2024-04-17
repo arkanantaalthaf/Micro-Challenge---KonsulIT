@@ -1,0 +1,67 @@
+*,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: linear-gradient(180deg, #e6f3f6, #99aaed);
+}
+
+.btn {
+  padding: 10px 70px;
+  background-color: white;
+  border-color: white;
+  color: black;
+  font-weight: 500;
+}
+
+.btn-login {
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 20px;
+}
+
+.link-login {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.form-label {
+  font-weight: 600;
+}
+
+.forgot-pass {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: small;
+}
+
+.submit {
+  color: black;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.d-flex {
+  margin-top: 80px; 
+}
+
+.link-user {
+  color: black;
+  text-decoration: none;
+}
+
+.forgot-pass {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.forgot-pass-text {
+  text-decoration: none;
+  color: black;
+}
