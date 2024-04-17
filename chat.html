@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Konsul IT - Chat</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="shadow navbar navbar-expand-lg navbar-dark navbar fixed-top" style="background-color: #111b43">
+      <div class="container-fluid">
+        <div class="navbar-brand">
+          <img src="img/Logo Website Putih.png" width="50px" alt="Logo" class="d-inline-block align-text-top" />
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Experts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="edukasi.html">Education</a>
+            </li>
+          </ul>
+          <button class="btn btn-flat ms-auto">
+            <img src="img/globe.png" class="ms-auto" alt="language" height="20" />
+          </button>
+          <span><button class="btn btn-light" type="button" style="border-radius: 50px">Login</button></span>
+        </div>
+      </div>
+    </nav>
+    <!-- Akhir Navigation Bar -->
+
+    <!-- Konten -->
+    <div class="container" style="margin-top: 75px">
+      <div class="row">
+        <div class="col-sm-8">
+          <nav class="navbar" style="background-color: #99aaed">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                  <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" />
+                </svg>
+                <img src="img/pp.jpg" alt="pp" width="30" class="rounded-circle" />
+                Rendra
+              </a>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+              </svg>
+            </div>
+          </nav>
+          <!-- Chat Container -->
+          <div class="card mt-3">
+            <div class="card-body">
+              <div class="chat-container">
+                <div class="chat-messages">
+                  <!-- Messages will be appended here dynamically -->
+                </div>
+                <form id="chat-form">
+                  <div class="input-group mb-2">
+                    <input type="text" id="message" class="form-control" placeholder="Ketik pesan..." class="" />
+                    <img src="img/icon plus.png" alt="icon" class="align-self-center ms-3" style="width: 15px; height: 15px" />
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- End Chat Container -->
+        </div>
+        <div class="col-md-4" style="background-color: #222f65">
+          <div class="d-flex flex-column align-items-center align-items-sm-auto px-3 pt-2 text-white min-vh-100">
+            <img src="img/Logo Website Putih.png" alt="" style="width: 75%" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Konten -->
+
+    <!-- Footer -->
+    <footer class="shadow" style="background-color: #111b43">
+      <div class="d-flex justify-content-between align-items-center mx-auto p-3 flex-wrap" style="width: 95%">
+        <p class="text-white m-1">&copy; KONSULIT, 2024. ALL RIGHTS RESERVED</p>
+        <div>
+          <b class="text-white m-1">Follow Us:</b>
+          <button class="btn btn-flat p-2">
+            <img src="img/instagram.png" alt="instagram" height="20" />
+          </button>
+          <button class="btn btn-flat p-2">
+            <img src="img/facebook.png" alt="instagram" height="20" />
+          </button>
+          <button class="btn btn-flat p-2">
+            <img src="img/youtube.png" alt="instagram" height="20" />
+          </button>
+        </div>
+      </div>
+    </footer>
+    <!-- Akhir Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+      // JavaScript for handling chat functionality
+      document.getElementById("chat-form").addEventListener("submit", function (e) {
+        e.preventDefault();
+        const messageInput = document.getElementById("message");
+        const message = messageInput.value.trim();
+        if (message !== "") {
+          appendMessage("You", message);
+          // Logic to send message to backend or handle it
+          messageInput.value = "";
+        }
+      });
+
+      function appendMessage(sender, message) {
+        const chatMessages = document.querySelector(".chat-messages");
+        const messageElement = document.createElement("div");
+        messageElement.classList.add("message");
+        messageElement.innerHTML = `
+        <div class="message-sender">${sender}:</div>
+        <div class="message-body">${message}</div>
+      `;
+        chatMessages.appendChild(messageElement);
+        // Scroll to bottom of chat container
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+      }
+    </script>
+  </body>
+</html>
