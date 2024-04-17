@@ -25,6 +25,7 @@ html {
     background-color: #5364A9;
     border-radius: 20px;
     margin: 80px;
+    margin-top: 140px;
     padding: 20px;
 }
 
@@ -54,7 +55,7 @@ html {
 }
 
 .expert-pic {
-    width: 20vh;
+    width: 30vh;
     padding: 20px;
     border-radius: 50%;
     margin-left: 10px;
@@ -155,7 +156,7 @@ html {
     padding: 20px;
     background: #fff;
     border-radius: 40px;
-    width: 30%;
+    width: 40%;
     position: relative;
     transition: all 5s ease-in-out;
   }
@@ -198,7 +199,8 @@ html {
   }
 
   .image-popup {
-    width: 20vh;
+    width: 30vh;
+    height: 30vh;
     border-radius: 50%;
     padding: 10px;
   }
@@ -227,6 +229,7 @@ html {
   }
 
   .image-check {
-    width: 3vh;
+    width: 4vh;
+    height: 4vh;
     margin-left: 10px;
   }
