@@ -1,0 +1,266 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.search {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.search-input {
+    padding: 5px;
+}
+
+.image-search {
+    width: 3%;
+    height: 3%;
+    margin-right: 10px;
+}
+
+.isi {
+    background-color: #5364A9;
+    border-radius: 20px;
+    margin: 80px;
+    margin-top: 140px;
+    padding: 20px;
+}
+
+.title {
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.desc {
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    padding-top: 0;
+}
+
+.list-details {
+    background-color: white;
+    margin: 30px;
+    margin-inline: 150px;
+    margin-top: 30px;
+    border-radius: 20px;
+    display: flex;
+}
+
+.expert-pic {
+    width: 40vh;
+    padding: 20px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.identity {
+    padding: 25px;
+}
+
+.name, .username, .email {
+    margin: 10px;
+}
+
+.name {
+    font-weight: bold;
+    font-size: large;  
+}
+
+.username, .email {
+    font-size: smaller;
+}
+
+.email-pic {
+    width: 3vh;
+    background-color: red;
+}
+
+.a {
+    color: white;
+}
+
+.right {
+    margin-top: 10px;
+}
+
+.case-desc {
+    margin-top: 10px;
+    margin-bottom: 145px;
+}
+
+.see-more-details {
+    color: black;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 0;
+}
+
+.expert-details {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.expert-details-desc {
+    margin-top: 70px;
+    display: flex;
+    justify-content: flex-start;
+    font-size: smaller;
+    
+}
+
+.consult {
+    text-decoration: none;
+    color: black;
+}
+
+.consult-text, .consult-text-popup {
+    border: black solid;
+    border-radius: 20px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    background-color: #111b43;
+}
+
+.consult-text-popup {
+    margin-inline: 120px;
+    margin-top: 30px;
+}
+
+
+/* popup */
+
+.box {
+    width: 40%;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.2);
+    padding: 35px;
+    border: 2px solid #fff;
+    border-radius: 20px/50px;
+    background-clip: padding-box;
+    text-align: center;
+  }
+  
+  .button {
+    font-size: 1em;
+    padding: 10px;
+    color: #fff;
+    border: 2px solid #06D85F;
+    border-radius: 20px/50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+  }
+  .button:hover {
+    background: #06D85F;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 40px;
+    width: 40%;
+    position: relative;
+    transition: all 5s ease-in-out;
+  }
+  
+  .popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+  }
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  .popup .close:hover {
+    color: #9c9d9c;
+  }
+  .popup .content {
+    max-height: 30%;
+    overflow: auto;
+  }
+  
+  @media screen and (max-width: 700px){
+    .box{
+      width: 70%;
+    }
+    .popup{
+      width: 70%;
+    }
+  }
+
+  .isi-popup {
+    display: flex;
+    padding: 30px;
+  }
+
+  .image-popup {
+    width: 30vh;
+    height: 30vh;
+    border-radius: 50%;
+    padding: 10px;
+  }
+
+  .popup-identity {
+    padding: 15px;
+  }
+
+  .content {
+    padding: 10px;
+  }
+
+  .content-desc {
+    font-size: small;
+    text-align: justify;
+  }
+
+  .case-desc-popup {
+    margin-left: 10px;
+    font-size: smaller;
+    font-weight: bolder;
+  }
+
+  .case-popup {
+    display: flex;
+  }
+
+  .image-check {
+    width: 4vh;
+    height: 4vh;
+    margin-left: 10px;
+  }
